@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
                var img = fs.readFileSync(file);
                res.contentType = 'image/png';
                res.contentLength = stat.size;
-               res.end( img, 'binsry');
+               res.end( img, 'binary');
             }
         }); 
     } else {
