@@ -13,7 +13,7 @@ http.createServer(function (req, res) {
             if(err) {
                 console.log('err');
                 res.writeHead(200, {'content-type': 'text/plain'});
-                res.end('sorry, burningbird around right now \n');
+                res.end('sorry, burning the bird around right now \n');
             } else {
                var img = fs.readFileSync(file);
                res.contentType = 'image/png';
